@@ -106,5 +106,86 @@ class Main {
         
     }
 }
+//region matches
+
+import java.util.Scanner;
+class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String a = " New World";
+        String y = "Hello World";
+        String x = "Hello|World|Java";
+        System.out.println("Hello".matches(x));
+        System.out.println("World".matches(x));
+        System.out.println("JavaScript".matches(x));
+        System.out.println(y.regionMatches(7,a,4,5));
+    }
+}
+
+//Split method
+
+import java.util.Scanner;
+class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your Name");
+        String x = sc.nextLine();
+        //String x = "Prajeen Kumar";
+        String y = "[,\\.\\s]";
+        String []z = x.split(y);
+        for (String s:z){
+            System.out.println(s);}
+        }
+    }
+
+//Split method-2
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Your Name");
+        String x = sc.nextLine();
+        int y = 7;
+        String a = x.substring(0,y);
+        String b = x.substring(y);
+        
+        System.out.println(a+" "+b);
+        
+        
+    }
+}
+
+//Sub Sequence
+
+import java.util.Scanner;
+class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your character");
+        String x = sc.nextLine();
+        CharSequence b=x.subSequence(0,7);
+        CharSequence a=x.subSequence(7,12);
+        System.out.println(b+" "+a);
+    }
+}
+
+// Lowercase/uppercase
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        String x = data.nextLine();
+        char[] y = x.toCharArray();
+        
+        System.out.println(x.toLowerCase());
+        System.out.println(x.toUpperCase());
+        System.out.println(x.toString());
+    }
+}
+    
+
         
         
