@@ -99,3 +99,29 @@ public class Main{
 	 }
 	
 	}
+
+		class Student{
+    int reg;
+    String name;
+    void assign (int r ,String n ){
+        reg = r;
+        name = n;
+        
+    }
+    void print(){
+        System.out.println(reg + " " + name);
+        
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Student m1 = new Student();
+        m1.assign (101,"Prajeen");
+        Student m2= new Student();
+        m2.assign (102,"Kartick");
+        m1.print();
+        m2.print();
+        
+    }
+}
+
